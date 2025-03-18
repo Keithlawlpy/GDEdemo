@@ -7,7 +7,7 @@ public class JumpKingMovement : MonoBehaviour
 
     private Rigidbody2D rb;
     private Animator animator;
-    private bool onGround = true;
+    private bool is_jumping = true;
 
     void Start()
     {
@@ -17,29 +17,18 @@ public class JumpKingMovement : MonoBehaviour
 
     void Update()
     {
-        // Update animator states
-        animator.SetBool("is_idle", onGround);
-        animator.SetBool("is_jumping", !onGround && rb.velocity.y > 0);
-        animator.SetBool("is_falling", !onGround && rb.velocity.y < 0);
-        animator.SetBool("on_ground", onGround);
-
-        if (onGround && (Input.GetKeyDown(KeyCode.LeftArrow) || Input.GetKeyDown(KeyCode.RightArrow)))
+       if(Input.GetKeyDown(KeyCode.Space) && !is_jumping)
         {
-            Jump(Input.GetKeyDown(KeyCode.LeftArrow) ? -1 : 1);
+            rb.velocity = new Vector2(rb.velocity.x, jumpForce);
+            is_jumping = true;
+            animator.SetBool("is_jumping", true);
         }
     }
 
-    void Jump(int direction)
+    private void OnTriggerEnter2D(Collider2D collision)
     {
-        rb.velocity = new Vector2(direction * jumpDirection, jumpForce);
-        onGround = false;
-    }
-
-    private void OnCollisionEnter2D(Collision2D collision)
-    {
-        if (collision.gameObject.CompareTag("Ground"))
-        {
-            onGround = true;
-        }
+        is_jumping = false;
+        animator.SetBool("is_jumping", false);
     }
 }
+
