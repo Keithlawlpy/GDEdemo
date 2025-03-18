@@ -1,14 +1,50 @@
 fileFormatVersion: 2
-guid: 496562456fdbe6647887febf11640c70
+guid: 274d64617113287499ed1c4165d1d8f3
 AssetOrigin:
   serializedVersion: 1
-  productId: 248158
-  packageName: Platformer Tileset - Pixelart Grasslands
+  productId: 188518
+  packageName: Simple 2D Platformer Assets Pack
   packageVersion: 1.0
-  assetPath: Assets/BigManJD/Platformer Tileset - Pixelart Grasslands/Character/CharacterSheet.png
-  uploadId: 577368
+  assetPath: Assets/Simple 2D Platformer BE2/Sprites/Coins.png
+  uploadId: 417220
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: -2322180950842035098
+    second: Bronze 0
+  - first:
+      213: -4893972260818282012
+    second: Bronze 1
+  - first:
+      213: -6323751108524238166
+    second: Bronze 2
+  - first:
+      213: 2722280177590742205
+    second: Bronze 3
+  - first:
+      213: 6582046967323461550
+    second: Silver 0
+  - first:
+      213: 1942777921290549423
+    second: Silver 1
+  - first:
+      213: 8793606821965667882
+    second: Silver 2
+  - first:
+      213: 3444832735345940322
+    second: Silver 3
+  - first:
+      213: -4986890610287934012
+    second: Gold 0
+  - first:
+      213: 6143208460787649835
+    second: Gold 1
+  - first:
+      213: 7609282858266732271
+    second: Gold 2
+  - first:
+      213: -6288512792030432889
+    second: Gold 3
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -46,7 +82,7 @@ TextureImporter:
     mipBias: 0
     wrapU: 1
     wrapV: 1
-    wrapW: 1
+    wrapW: 0
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
@@ -55,7 +91,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 8
+  spritePixelsToUnits: 16
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -76,7 +112,7 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 2048
+    maxTextureSize: 128
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 0
@@ -89,36 +125,10 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: Standalone
-    maxTextureSize: 2048
+    maxTextureSize: 128
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
-    buildTarget: Server
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
-    buildTarget: WebGL
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -128,7 +138,20 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: Android
-    maxTextureSize: 2048
+    maxTextureSize: 128
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 128
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 0
@@ -141,7 +164,7 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: iPhone
-    maxTextureSize: 2048
+    maxTextureSize: 128
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 0
@@ -154,7 +177,7 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: tvOS
-    maxTextureSize: 2048
+    maxTextureSize: 128
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 0
@@ -167,7 +190,7 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: Windows Store Apps
-    maxTextureSize: 2048
+    maxTextureSize: 128
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 0
@@ -182,54 +205,12 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: CharacterSheet_7
+      name: Bronze 0
       rect:
         serializedVersion: 2
-        x: 2
-        y: 64
-        width: 12
-        height: 17
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 51ff78b187e62ea41a648c9549f9b704
-      internalID: -1167975446
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: CharacterSheet_8
-      rect:
-        serializedVersion: 2
-        x: 3
-        y: 32
-        width: 11
-        height: 17
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ad7282999f696bb42b760324ad6eb9ed
-      internalID: -1780072267
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: CharacterSheet_9
-      rect:
-        serializedVersion: 2
-        x: 20
-        y: 32
-        width: 10
+        x: 0
+        y: 34
+        width: 16
         height: 16
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -238,20 +219,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d70bc9f51fd70144ba3c4a9d63a4020d
-      internalID: -1010213831
+      spriteID: 664b1e88ab4f5cfd0800000000000000
+      internalID: -2322180950842035098
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: CharacterSheet_10
+      name: Bronze 1
       rect:
         serializedVersion: 2
-        x: 33
-        y: 32
-        width: 13
-        height: 17
+        x: 17
+        y: 34
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -259,19 +240,40 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e1230fb84b4dc99459fbc3c8f3084c16
-      internalID: -555376057
+      spriteID: 4e99f4d782e151cb0800000000000000
+      internalID: -4893972260818282012
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: CharacterSheet_11
+      name: Bronze 2
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 34
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aaa1e681fd58d38a0800000000000000
+      internalID: -6323751108524238166
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bronze 3
       rect:
         serializedVersion: 2
         x: 51
-        y: 32
-        width: 11
+        y: 34
+        width: 16
         height: 16
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -280,40 +282,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1d35926f968149a418aaf47c1a53a1be
-      internalID: 764183432
+      spriteID: dbc2264f56b77c520800000000000000
+      internalID: 2722280177590742205
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: CharacterSheet_12
+      name: Silver 0
       rect:
         serializedVersion: 2
-        x: 1
-        y: 0
-        width: 13
-        height: 18
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 0844aab80db45614d8c7a19dadb9be09
-      internalID: 848147420
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: CharacterSheet_13
-      rect:
-        serializedVersion: 2
-        x: 18
-        y: 0
-        width: 13
+        x: 0
+        y: 17
+        width: 16
         height: 16
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -322,8 +303,155 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 40fe68503d7b36b46a3a3ced05cd85c6
-      internalID: -169170843
+      spriteID: ea78046f7d0285b50800000000000000
+      internalID: 6582046967323461550
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Silver 1
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 17
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa8bef3e93226fa10800000000000000
+      internalID: 1942777921290549423
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Silver 2
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 17
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a2e17b560da290a70800000000000000
+      internalID: 8793606821965667882
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Silver 3
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 17
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2679eec0f118ecf20800000000000000
+      internalID: 3444832735345940322
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gold 0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c58e0069610bcab0800000000000000
+      internalID: -4986890610287934012
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gold 1
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b2d0c660c8f014550800000000000000
+      internalID: 6143208460787649835
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gold 2
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe62572a17a999960800000000000000
+      internalID: 7609282858266732271
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gold 3
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 781b6810fe6bab8a0800000000000000
+      internalID: -6288512792030432889
       vertices: []
       indices: 
       edges: []
@@ -331,7 +459,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 5e97eb03825dee720800000000000000
+    spriteID: 7e6a3458aea67d6468fc14ee8c46abba
     internalID: 0
     vertices: []
     indices: 
@@ -339,20 +467,18 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      CharacterSheet_0: 2059103999
-      CharacterSheet_1: -1728836201
-      CharacterSheet_10: -555376057
-      CharacterSheet_11: 764183432
-      CharacterSheet_12: 848147420
-      CharacterSheet_13: -169170843
-      CharacterSheet_2: -111526421
-      CharacterSheet_3: -1206621690
-      CharacterSheet_4: 216769905
-      CharacterSheet_5: 374496889
-      CharacterSheet_6: 572023524
-      CharacterSheet_7: -1167975446
-      CharacterSheet_8: -1780072267
-      CharacterSheet_9: -1010213831
+      Bronze 0: -2322180950842035098
+      Bronze 1: -4893972260818282012
+      Bronze 2: -6323751108524238166
+      Bronze 3: 2722280177590742205
+      Gold 0: -4986890610287934012
+      Gold 1: 6143208460787649835
+      Gold 2: 7609282858266732271
+      Gold 3: -6288512792030432889
+      Silver 0: 6582046967323461550
+      Silver 1: 1942777921290549423
+      Silver 2: 8793606821965667882
+      Silver 3: 3444832735345940322
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
