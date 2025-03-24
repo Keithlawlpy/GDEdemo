@@ -18,11 +18,21 @@ public class JumpKingMovement : MonoBehaviour
     void Update()
     {
        if(Input.GetKeyDown(KeyCode.Space) && !is_jumping)
-        {
+       {
             rb.velocity = new Vector2(rb.velocity.x, jumpForce);
             is_jumping = true;
             animator.SetBool("is_jumping", true);
-        }
+       }
+
+       if (Input.GetKey(KeyCode.LeftArrow))
+       {
+            rb.velocity = new Vector2(-jumpDirection, rb.velocity.y);
+       }
+
+       if (Input.GetKey(KeyCode.RightArrow))
+       {
+            rb.velocity = new Vector2(jumpDirection, rb.velocity.y);
+       }
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
