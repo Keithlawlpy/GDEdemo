@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.UI;
 
 public class PlayerMovement : MonoBehaviour
 {
@@ -25,11 +26,14 @@ public class PlayerMovement : MonoBehaviour
 
     [Header("Wall Check")]
     public float wallCheckDistance = 0.2f;
-    public LayerMask wallLayer;
+    public LayerMask wallLayer; 
+
+    [Header("UI")]
+    public Image jumpChargeBarFill; 
 
 
 
-    void Start()
+void Start()
     {
         rb = GetComponent<Rigidbody2D>();
     }
@@ -71,11 +75,13 @@ public class PlayerMovement : MonoBehaviour
             {
                 currentJumpForce += chargeSpeed * Time.deltaTime;
                 currentJumpForce = Mathf.Clamp(currentJumpForce, 0f, maxJumpForce);
+                UpdateJumpChargeBar();
             }
 
             if (Input.GetKeyUp(KeyCode.Space) && isChargingJump)
             {
                 Jump();
+                UpdateJumpChargeBar();
             }
         }
     }
@@ -137,5 +143,12 @@ public class PlayerMovement : MonoBehaviour
             rb.velocity = new Vector2(0f, rb.velocity.y);
         }
     }
+
+    void UpdateJumpChargeBar()
+    {
+        float fillAmount = currentJumpForce / maxJumpForce;
+        jumpChargeBarFill.fillAmount = fillAmount;
+    }
+
 
 }
